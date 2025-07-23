@@ -79,10 +79,15 @@ POST	/api/auth/login	Login & get token
 
 ### 📦 Products
 Method	Endpoint	Description
-GET	/api/products/all	Get all products
-GET	/api/products/{id}	Get product by ID
-POST	/api/products/add	Add new product (admin)
-PUT	/api/products/{id}	Update product (admin)
+
+GET	   /api/products/all	Get all products
+
+GET	   /api/products/{id}	Get product by ID
+
+POST	  /api/products/add	Add new product (admin)
+
+PUT	    /api/products/{id}	Update product (admin)
+
 DELETE	/api/products/{id}	Delete product (admin)
 
 ### 🛒 Cart
