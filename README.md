@@ -34,10 +34,9 @@ This is a fully functional **Spring Boot E-Commerce Backend** application with J
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/yourusername/ecommerce-backend.git
 cd ecommerce-backend
-2. Configure application.properties
+### 2. Configure application.properties
 
 # Database
 spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
@@ -53,10 +52,10 @@ jwt.secret=your_jwt_secret_key
 
 # Static files (for product images)
 spring.web.resources.static-locations=file:uploads/
-3. Create Uploads Directory
+### 3. Create Uploads Directory
 
 mkdir uploads
-4. Run the Application
+### 4. Run the Application
 
 ./mvnw spring-boot:run
 The backend will run at: http://localhost:8080
