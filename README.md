@@ -60,23 +60,24 @@ mkdir uploads
 ./mvnw spring-boot:run
 The backend will run at: http://localhost:8080
 
-🔑 Authentication
+### 🔑 Authentication
 Register: POST /api/auth/register
 
 Login: POST /api/auth/login
 
 After login, use the token in headers:
 
-makefile
 
 Authorization: Bearer <your_jwt_token>
-📦 API Endpoints
-🔐 Auth
+### 📦 API Endpoints
+### 🔐 Auth
 Method	Endpoint	Description
+
 POST	/api/auth/register	Register user
+
 POST	/api/auth/login	Login & get token
 
-📦 Products
+### 📦 Products
 Method	Endpoint	Description
 GET	/api/products/all	Get all products
 GET	/api/products/{id}	Get product by ID
@@ -84,27 +85,27 @@ POST	/api/products/add	Add new product (admin)
 PUT	/api/products/{id}	Update product (admin)
 DELETE	/api/products/{id}	Delete product (admin)
 
-🛒 Cart
+### 🛒 Cart
 Method	Endpoint	Description
 POST	/api/cart/add	Add to cart
 GET	/api/cart/all	Get user cart items
 DELETE	/api/cart/remove	Remove one product
 DELETE	/api/cart/clear	Clear entire cart
 
-📦 Orders
+### 📦 Orders
 Method	Endpoint	Description
 POST	/api/orders/place	Place new order
 GET	/api/orders/my	Get logged in user's orders
 DELETE	/api/orders/{id}	Delete order
 
-🖼️ Uploading & Serving Images
+### 🖼️ Uploading & Serving Images
 When uploading a product, image is stored in uploads/ directory.
 
 Served statically via:
 
-
 http://localhost:8080/uploads/{filename}
-🧑‍💻 Roles
+
+### 🧑‍💻 Roles
 USER - Can view, add to cart, and place orders
 
 ADMIN - Can manage all products
